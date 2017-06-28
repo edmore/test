@@ -9,3 +9,18 @@ two:
   title: MyString
   score: 1
   person: valid
+
+
+invalid:
+  score: 1
+  person: valid
+
+invalid_score1:
+  title: MyString
+  score: 11
+  person: valid
+
+invalid_score2:
+  title: MyString
+  score: 0
+  person: valid
