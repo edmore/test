@@ -4,8 +4,6 @@ valid:
   first_name: "Edmore"
   last_name: "Moyo"
 
-no_first_name:
+another_person:
+  first_name: "Tu"
   last_name: "Moyo"
-
-no_last_name:
-  first_name: "Edmore"

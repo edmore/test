@@ -10,17 +10,16 @@ two:
   score: 1
   person: valid
 
-
 invalid:
   score: 1
-  person: valid
+  person: another_person
 
 invalid_score1:
   title: MyString
   score: 11
-  person: valid
+  person: another_person
 
 invalid_score2:
   title: MyString
   score: 0
-  person: valid
+  person: another_person
