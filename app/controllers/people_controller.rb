@@ -3,4 +3,15 @@ class PeopleController < ApplicationController
     @people = Person.all
     render json: @people, status: :ok
   end
+
+  def create
+    @person = Person.create!(people_params)
+    render json: @person, status: :created
+  end
+
+  private
+
+  def people_params
+    params.permit(:first_name, :last_name)
+  end
 end
