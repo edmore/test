@@ -6,7 +6,12 @@ class PeopleController < ApplicationController
 
   def create
     @person = Person.create!(people_params)
-    render json: @person, status: :created
+    render json: @person ,status: :created
+  end
+
+  def show
+    @person = Person.find(params[:id])
+    render json: @person, include: :goals, status: :ok
   end
 
   private
