@@ -1,7 +1,7 @@
 class PeopleController < ApplicationController
   def index
     @people = Person.all
-    render json: @people, status: :ok
+    render json: @people, include: [:goals], methods: :person_score, status: :ok
   end
 
   def create
@@ -11,11 +11,10 @@ class PeopleController < ApplicationController
 
   def show
     @person = Person.find(params[:id])
-    render json: @person, include: :goals, status: :ok
+    render json: @person, include: [:goals], methods: :person_score, status: :ok
   end
 
   private
-
   def people_params
     params.permit(:first_name, :last_name)
   end

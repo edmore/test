@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20170628103654) do
 
   create_table "goals", force: :cascade do |t|
     t.string "title"
-    t.integer "score"
+    t.integer "score", default: 1
     t.integer "person_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
