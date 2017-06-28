@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+valid:
+  first_name: "Edmore"
+  last_name: "Moyo"
+
+no_first_name:
+  last_name: "Moyo"
+
+no_last_name:
+  first_name: "Edmore"
